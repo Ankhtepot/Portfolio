@@ -1,0 +1,6 @@
+node_modules
+provided solution/
+
+.idea
+.idea/workspace.xml
+.idea/vcs.xml

@@ -1,0 +1,33 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$dark-color: #333333;
+$medium-color: #cccccc;
+$bg-image: url('../img/showcase.jpg');
+
+// Set Text Color
+@function set-text-color($color)
+{
+  @if(lightness($color) > 50)
+  {
+    @return #000;
+  }
+  @else
+  {
+    @return #ffffff;
+  }
+}
+
+// W vs H images
+@function set-image-position($image-width, $image-height)
+{
+  @if($image-width > $image-height)
+  {
+    @return 10px;
+  }
+  @else
+  {
+    @return 0;
+  }
+}
